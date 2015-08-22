@@ -1,5 +1,6 @@
 library(shiny)
 library(ggplot2)
+library(markdown)
 
 
 # Simulating Data
@@ -136,5 +137,9 @@ shinyServer(function(input, output) {
     
     
   })
+  
+  
+
+  
   
 })

@@ -1,5 +1,6 @@
 library(shiny)
 library(ggplot2)
+library(markdown)
 
 
 
@@ -36,6 +37,18 @@ shinyUI(
     )
   )
 )),
-tabPanel("Doc",
-         verbatimTextOutput(h4("summary"))
-)))
+
+
+
+tabPanel("Documentation",
+         fluidPage(
+           fluidRow(
+             column(11,
+                    includeMarkdown("Doc.md")
+             )
+          )
+        )
+      )
+
+
+))

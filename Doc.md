@@ -1,15 +1,3 @@
-# Coursera Shiny Application
-
-This repository contains the ui.R and server.R of my applications.
-
-The created Shiny Application is called **"Time Series Explorer"**, and is deployed on ShinyServer in this link: https://adanba.shinyapps.io/Coursera-Application
-
-
-# Documentation
-
-
-
-
 ## What this application do:
 
 This application is a **"Time Series Explorer"**, with some pre-programming **Filter** on data.
@@ -83,7 +71,6 @@ We have three filters here:
 * Plot only the frequency of call abandonned
 
 
-
 ## Plotting Options:
 
 We used `radioButtonscan` to choose one of the three these plotting modes (default web):
@@ -93,8 +80,6 @@ We used `radioButtonscan` to choose one of the three these plotting modes (defau
 * Both Web and Call Data
 
 We also can modify the step of calculating frequency (default pause = 5 min), here we used `sliderInput`.
-
-
 
 
 # Deploy my Application:
@@ -110,3 +95,4 @@ setAccountInfo(name='adanba', token='1FFB53913C7D9BFBD16862C43D6C356A', secret='
 deployApp(appName = "Coursera-Application","/Desktop/Coursera -AppsWeb2/")
 ```
 
+**FINISHED**.
