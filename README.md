@@ -37,7 +37,7 @@ df.web <- data.frame(
   call = 0,
   question = rbinom(n,1,.75),
   answered = 0,
-  abandonned = 0
+  abandoned = 0
 )
 
 df.call <- data.frame(
@@ -47,7 +47,7 @@ df.call <- data.frame(
   call = 1,
   question = 0,
   answered = rbinom(n,1,.85),
-  abandonned = rbinom(n,1,.35)
+  abandoned = rbinom(n,1,.35)
 )
 
 Web_Call  = rbind(df.web,df.call)
@@ -80,7 +80,7 @@ We have two filters:
 We have three filters here:
 * The first one is plot All Data of Call Center
 * Plot only the frequency of call answered
-* Plot only the frequency of call abandonned
+* Plot only the frequency of call abandoned
 
 
 
